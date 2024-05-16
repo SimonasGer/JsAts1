@@ -2,7 +2,7 @@ let subject = document.querySelector("#subject");
 let dueDate = document.querySelector("#date");
 let subjectAdd = document.querySelector("#create");
 let subjectRows = document.querySelector("#rows");
-
+// localStorage.clear()
 for (subjects in localStorage){
     if (localStorage.getItem(subjects) != undefined && localStorage.getItem(subjects) !== "honey:core-sdk:*"){
         let properties = localStorage[subjects].split(",");
